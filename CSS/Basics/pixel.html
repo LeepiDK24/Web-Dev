@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+        #div2{
+        background-color: aqua;
+        height: 20%;
+        width: 10%;
+        /* yaha jo ye % h na this is the percentage of parent element  */
+        margin: 10px;
+        padding: 10px;
+        }
+        #para1{
+            background-color: aqua;
+            height: 25vh;
+            width: 15vw;
+        }
+    </style>
+    <!-- units em and rem are relative units
+    xem=x*parent tag k dimensions
+    x rem= x*html tag k dimensions which is the root tag-->
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+
+        </div>
+    </div>
+    <p id="para1">This is para</p>
+</body>
+</html>

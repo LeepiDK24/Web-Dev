@@ -1,0 +1,13 @@
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+    /* transform: translate(200px,200px); */
+    /* transform: rotate(-45deg); */
+    /* positive acw negative cw */
+    margin: 200px;
+    transform: scale(2,3);
+    /* horzontal,vertical scaling  */
+    transform: skew(-45deg);
+    /* -ve -----> cw
+       +ve -----> acw */
+}

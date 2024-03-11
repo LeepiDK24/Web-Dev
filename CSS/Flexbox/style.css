@@ -1,0 +1,72 @@
+.container{
+    height: 400px;
+    border: 2px solid green;
+    display: flex; /* by default main axis k acc stack hona start ho jate h */
+    flex-direction: row; 
+    /* column likhne se horizontal axis k acc stacking hogi 
+    and row likhne se vertical axis k acc
+    row reverse se vertical stacking pr right side se
+    column reverse se horizontal stacking bottom side se*/
+    flex-wrap: wrap;
+    /* ab isse hoga ye k  width same rhegi squeez krne pe bhi jb tk possible h*/
+    /* ab iski 3 values h 
+    1 nowrap -----> meaning squeeze krne pr width change hogi
+    2 wrap
+    3 wrap-reverse-----> width change hokr div upar chla jayega */
+
+
+    /* justify content will align the text on the main axis */
+    justify-content: flex-start; /* main axis k start mein alignment*/
+    justify-content: flex-end; /* main exis k end me alignment*/
+    justify-content: center;/* centre of main axis*/
+    justify-content: space-around; /* all 4 boxes k bich me even spacing pr first box k phle and last k baad equal spacing  nhi hoti h*/
+    justify-content: space-between; /* all boxes k bich me equal spacing first k phle and last k baad no space */
+    justify-content: space-evenly; /* uniform spaces b/w all boxes first box k phle and last box k baad bhi */
+
+    /* Cross axis k around align items text ko align krta h */
+    align-items: flex-start; /* cross axis k start me alignmet hoga  */  
+    align-items: flex-end; /* cross axis k end t me alignmet hoga  */
+    align-items: center; /* cross axis k centre me alignmet hoga  */
+    align-items: stretch; /* cross axis k along stretch me alignmet hoga  */
+    align-items: baseline; /* cross axis k about baseline same hojayegi and then alignmet hoga  */
+
+    /* just overwriting previous properties */
+    /* to bring elements at the centre of parent container and create spacing b/w them */
+    justify-content: center; 
+    align-items: center;
+    gap: 0px;
+
+    /* Align content to handle spacing b/w multiple rows */
+    align-content: flex-start;  /* start of main axis */
+    align-content: flex-end; /* end of main axis */
+    align-content: center; /* center of main axis */
+    align-content: space-between; /* ek row upr ek row neeche bich me gap */
+    align-content: space-evenly; /* uniform spacing of rows in main axis */
+    align-content: space-around; /* 2 rows k bich me even spacing pr phle and baadme uneven spacing */
+}   
+
+.box{
+    border: 1px solid brown;
+    background-color: rgb(22, 206, 114);
+    width: 100px;
+    flex-basis: 100px; /*this adjusts width of boxes*/
+    /* diff b/w width and flex basis is overflow wala content width hide kr dega 
+    and flex basis will automatically adjust the size of the box acc to the content
+    Good practice is to write flex basis to make website responsive */
+
+    /* flex-grow: 1; isse saare boxes grow honge */
+    /* flex-shrink: 2; isse na squeeze krte waqt sare boxes equally shrink honge */
+}
+
+#box1{
+    order: 1;
+    /* flex-grow: 1;  */
+    /* flex-shrink: 3; isse squeeze krte waqt only box 1 fastly squeeze hoga */
+    /* align self ------->> flex start ,end ,centre ,etc me boxes align kr skte h */
+}
+
+
+#box2{
+    order: 2;
+}
+

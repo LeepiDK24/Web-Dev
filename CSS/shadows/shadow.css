@@ -1,0 +1,16 @@
+.h1{
+    text-shadow: 3px 3px 3px red;
+    /* horizontal vertical blur colour */
+    text-shadow: 3px 3px 3px red,8px 8px 8px green;
+
+}
+.box{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px green,9px 9px 9px yellow ;
+    /* if colour is not mentioned toh shadow colour is same as text colour */
+    box-shadow: -5px 5px 5px green,-9px 9px 9px yellow ;
+
+}
