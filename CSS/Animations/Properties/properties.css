@@ -1,0 +1,71 @@
+.container{
+    border:1px solid brown;
+    background-color: yellow;
+    height:700px;
+    width:600px;
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    /* grid-gap:10px; */
+
+    /* positions */
+
+    /* along main axis  boxes ko place krna*/
+    /* justify-content: start;
+    /* justify-content: end; */
+    /* justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;  */
+
+    /* content jo boxes h vo kaise place honge */
+    /* align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+
+    /* place-content ==>> short hand notation for justify content and align content */
+    /* place-content: center; */
+
+  
+   /* justify item  */
+   /* justify-items: center; */
+
+    /* along cross axis align items */
+    /* align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: baseline;    */
+    /* when content is unevely sized tb 
+    content ko baseline maan kr sb even krne k liye we use baseline property */
+    /* align-items: stretch; */
+    /* pure cell mein it will stretch ===> default prop */
+
+    /* place item  */
+    place-items: center;
+
+    
+
+    
+
+}
+
+.box{
+    border:1px solid red;
+    background-color: aqua;
+}
+/* 
+#box1{
+    /* justify self ==>> horizontal axis mein content jitna bhi hoga uske acc it will be placed */
+    /* justify-self: start; */
+    /*justify-self: end;
+    justify-self: center; */
+
+    /* align self ==>> vertical axis me content k acc placeing*/
+    /* align-self: start;
+    align-self: end;
+    align-self: center; 
+}
+    */
