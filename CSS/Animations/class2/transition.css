@@ -1,0 +1,28 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    border: 3px solid green;
+    display: flex;
+}
+
+.box{
+    border: 2px soild orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+
+    /* transition: transform 1s ease 2s; */
+    /* transition: all 2s ease 1s; */
+    /* transition: transform 1s ease-in ; */
+    /* khud ki create ki hui movement */
+     transition: transform 2s ease 1s ; 
+
+}
+
+.box:hover{
+    background-color: yellow;
+    /* transform: rotate(45deg); */
+    transform: scale(1.5) translateX(300px) rotate(360deg);
+}

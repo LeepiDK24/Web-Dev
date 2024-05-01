@@ -1,0 +1,21 @@
+:root{
+    --dark:#000234;
+    /* this is a global variable */
+}
+
+.container{
+    border: 2px solid brown;
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    /* background-color: var(--dark); */
+}
+
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+    /* --dark-red:#000234;    */
+    /* the scope of this color ends in box itself
+    its a local variable */
+    color:var(--dark-red);
+}
